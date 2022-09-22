@@ -1,0 +1,23 @@
+<div>
+    <form action="">
+        <label for="">fecha:</label>
+        <input type="text" id="date" name="date" [(ngModel)]="date">
+        <label for="">Formato:</label>
+        <select name="" id="format" name="format" [(ngModel)]="format">
+            <option value="LT" selected>LT</option>
+            <option value="LTS">LTS</option>
+            <option value="L">L</option>
+            <option value="l">l</option>
+            <option value="LL">LL</option>
+            <option value="ll">ll</option>
+            <option value="LLL">LLL</option>
+            <option value="lll">lll</option>
+            <option value="LLLL">LLLL</option>
+            <option value="llll">llll</option>
+        </select>
+        <!-- <button type="submit" (click)="getTime()">Format</button> -->
+    </form>
+    <div>
+        <h2>{{date | tiempo : format}}</h2>
+    </div>
+</div>
